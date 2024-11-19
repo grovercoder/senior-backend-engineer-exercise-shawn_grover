@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employees</title>
+</head>
+<body>
+<h1>Employee Listing</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Job Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{range .}}
+            <tr>
+                <td>{{.ID}}</td>
+                <td>{{.Gender}}</td>
+                <td>{{.Department}}</td>
+                <td>{{.JobTitle}}</td>
+            </tr>
+        {{end}}
+    </tbody>
+</table>
+
+
+</body>
+</html>
