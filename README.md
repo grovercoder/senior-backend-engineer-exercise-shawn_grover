@@ -56,7 +56,7 @@ You can inspect the database to ensure the job_data table has been created and p
 
 1. **ASSUMPTION** - An assumption has been made that an employee may have zero or only one job data entry.  This simplified the logic and avoided dealing with multiple job_data records for an employee.  It is understood this assumption may be incorrect and extra effort would be needed if a zero or many relationship is required.
 1. This code is not production ready.  It is not currently configured to handle penetration testing, authentication, or other common aspects.  There may be error conditions that are not properly caught/handled.
-1. The ingestion endpoint would normally be a POST operation.  I intentially used a GET operation to simplify development and testing.
+1. The ingestion endpoint would normally be a POST operation.  I intentionally used a GET operation to simplify development and testing.
 1. Authorization should always be validated when modifying data.  This is outside the scope of this introduction project though and has been omitted.  I suspect this is an understood omission to the requirements.
 1. I have applied my systems knowledge from other languages/frameworks here in terms of how I organized the code.  I feel this organization allows for easy maintenance while allowing for growth over time.  It is possible to provide all the capabilities in a single file, but this would be a nightmare to maintain or grow.
 1. Coding the solution took me approx 2 hours.  However, this can be attributed to my relative new-ness to Go - the task itself and the concepts involved are straight forward for me.  I also spent almost as much time documenting and vetting the process as I did writing code.
