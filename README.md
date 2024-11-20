@@ -34,6 +34,15 @@ go run main.go
 # run the API on a different port
 # (replace the '55555' value with your desired port)
 WEB_PORT=55555 go run main.go
+
+# Alternatively, build an executable:
+go build -o myapp main.go
+
+# And run the executable
+./myapp
+# or
+WEB_PORT=55555 ./myapp
+
 ```
 
 Now that the service is running, you can ingest the job data by calling the `http://localhost:PORT/api/ingest`, with the JSON object passed as the body of the request.  You can do this with a `curl` command, postman, or other REST API client:
